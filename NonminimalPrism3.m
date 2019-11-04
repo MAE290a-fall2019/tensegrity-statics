@@ -61,4 +61,4 @@ U(1:dim,1:q)=0;
 [c_bars,t_strings,V]=tensegrity_statics(b,s,q,p,dim,Q,P,C,U);
 tensegrity_plot(Q,P,C,b,s,U,V,true,2); grid on;
 
-% end script NonminimalPrism4
+% end script NonminimalPrism3
