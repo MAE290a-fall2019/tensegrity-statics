@@ -1,4 +1,4 @@
-% Static force analysis of 4-bar non-minimal tensigrity prism (Fig 4.6 of Skelton & de Oliviera 2009)
+% Static force analysis of 3-bar non-minimal tensigrity prism (Fig 3.43 of Skelton & de Oliviera 2009)
 % By Shuhang Zhang, UC San Diego student 2019.
 clear; clf; clc; figure(1);
 
