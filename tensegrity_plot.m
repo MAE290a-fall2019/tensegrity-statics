@@ -1,5 +1,6 @@
 function tensegrity_plot(Q,P,C,b,s,U,V,outer,fac,fac1)
-% Code by Thomas Bewley (UCSD), written in Summer 2019 as a JPL Faculty Fellow.
+
+    % Code by Thomas Bewley (UCSD), written in Summer 2019 as a JPL Faculty Fellow.
 [dim,q]=size(Q); p=size(P,2); N=[Q P]; [M,I]=max(C'); [M,J]=min(C'); hold on
 if dim==2
     for k=1:b,     plot([N(1,I(k)) N(1,J(k))],[N(2,I(k)) N(2,J(k))],'r-'), end
@@ -37,6 +38,7 @@ if nargin>5
             end
         else
             if outer
+               
                 h=quiver(Q(1,i)-s*U(1,i),Q(2,i)-s*U(2,i),s*U(1,i),s*U(2,i),0);
             else
                 h=quiver(Q(1,i),Q(2,i),s*U(1,i),s*U(2,i),0);
