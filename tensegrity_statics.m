@@ -131,6 +131,10 @@ c_bars(1:b)=-x(1:b)
 if min(c_bars)>=0, disp("No bars under tension.  Good.");
 else, disp("Note: some bars not under compression.  Maybe replace them with strings?"), end
 t_strings(1:s)=x(b+(1:s)), tau_min=min(t_strings);
+
+if size(t_strings)>0
 if min(t_strings)>0, disp("The "+s+" strings are all under tension with tau_min="+tau_min+". Good."),
 else, disp("Some strings not under tension. Needs different tensioning or external loads."), end, disp(' ')
+end
+
 end % function extract_tension_and_compression
